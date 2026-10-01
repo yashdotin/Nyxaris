@@ -1,0 +1,6 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{@apply bg-ivory text-navy font-sans antialiased}
+html[lang=hi] body{font-family:var(--f-hs),sans-serif;line-height:1.7}
+html[lang=hi] .font-serif{font-family:var(--f-hr),serif;line-height:1.35}
+:focus-visible{outline:2px solid #B8892B;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}

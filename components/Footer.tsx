@@ -1,0 +1,3 @@
+"use client";
+import Link from "next/link";import {useT} from "@/lib/i18n";import {hrefs} from "./Navbar";
+export default function Footer(){const {t}=useT();return <footer className="bg-navy px-5 py-12 text-ivory"><div className="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:justify-between"><div><p className="font-serif text-3xl tracking-widest text-gold">ASTRA</p><p className="mt-2 max-w-xs text-sm text-ivory/70">{t.foot}</p></div><nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">{hrefs.map((h,i)=><Link key={h} href={h} className="hover:text-gold">{t.nav[i]}</Link>)}</nav></div><p className="mx-auto mt-8 max-w-6xl text-xs text-ivory/50">© {new Date().getFullYear()} ASTRA. {t.rights}</p></footer>}
